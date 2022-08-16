@@ -26,7 +26,7 @@ body{
 
 
 div.polaroid {
-    width: 20%;
+    width: auto;
     
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -38,7 +38,20 @@ div.container {
     padding: 10px 20px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
 
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
 
 </style></head>
 <body id="page-top" style= "background-image:url(Styles/img/60142046-abstract-background-with-transparent-group-of-numbers.jpg) no-repeat center center fixed">
@@ -99,10 +112,10 @@ div.container {
             <div class="col-md-6">
               <div class="row">
                   <div class="col-sm-6 col-md-5">
-                      <div >
-                      <div class="polaroid"><img src="Saved Pictures/31D2A215-7257-41A0-AB22-4DCE35744436.JPG" /><div class="container" alt="website template image"><p>Elvis </p> </div> </div>
-                      <div class="polaroid"><img src="Saved Pictures/IMG-0745.JPG" /> <div class="container" alt="website template image"><p>Elvis </p> </div> </div>
-                      <div class="polaroid"><img src="Saved Pictures/IMG-3765.jpg" /> <div class="container" alt="website template image"><p>Elvis </p> </div> </div>
+                      <div class="grid-container">
+                      <div class="polaroid"><img src="Saved Pictures/31D2A215-7257-41A0-AB22-4DCE35744436.JPG" width="400" height="500"/><div class="container" alt="website template image"><p>Elvis </p> </div> </div>
+                      <div class="polaroid"><img src="Saved Pictures/IMG-0745.JPG" width="400" height="500"/> <div class="container" alt="website template image"><p>Elvis </p> </div> </div>
+                      <div class="polaroid"><img src="Saved Pictures/IMG-3765.jpg" width="400" height="500"/> <div class="container" alt="website template image"><p>Elvis </p> </div> </div>
                       </div>
                   </div>
                 <div class="col-sm-6 col-md-7">
